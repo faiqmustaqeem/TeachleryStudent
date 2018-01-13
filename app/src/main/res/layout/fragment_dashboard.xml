@@ -1,0 +1,324 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.codiansoft.teachlerystudent.Fragments.DashboardFragment">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_1"
+                android:padding="10dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/net_credits_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="6778"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/net_credits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/net_credits_value"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Net Credits"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_2"
+
+                >
+
+                <TextView
+                    android:id="@+id/total_bookings_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="35"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/total_credits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Bookings"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/total_bookings_value"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/rounded_3"
+
+                >
+
+                <TextView
+                    android:id="@+id/booking_pending_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/bookings_pending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bookings Pending"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/booking_pending_value"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_4"
+
+                >
+
+                <TextView
+                    android:id="@+id/booking_complete_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="35"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/booking_complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Bookings"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/booking_complete_value"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/rounded_5"
+
+                >
+
+                <TextView
+                    android:id="@+id/booking_running_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/bookings_running"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bookings Pending"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/booking_running_value"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_6"
+
+                >
+
+                <TextView
+                    android:id="@+id/total_tutoring_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="35"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/total_tutoring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Bookings"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/total_tutoring_value"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/rounded_7"
+
+                >
+
+                <TextView
+                    android:id="@+id/qutions_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/qutions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qutions"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/qutions_value"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rounded_8"
+
+                >
+
+                <TextView
+                    android:id="@+id/message_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="35"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Bookings"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/message_value"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

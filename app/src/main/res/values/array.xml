@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="nav_item_activity_titles">
+        <item>"Dashborad"</item>
+        <item>"Bookings"</item>
+        <item>"Tutors"</item>
+        <item>"Manage"</item>
+        <item>"Account"</item>
+        <item>"Leads"</item>
+        <item>"Courses"</item>
+        <item>"Courses Categories"</item>
+        <item>"Credit Conversion Request"</item>
+        <item>"Settings"</item>
+
+    </array>
+
+    <array name="regsiter_as_items">
+
+        <item>Student</item>
+        <item>Tutor</item>
+        <item>Institute</item>
+    </array>
+
+
+</resources>

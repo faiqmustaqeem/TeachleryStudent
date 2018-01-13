@@ -1,0 +1,24 @@
+C:\Program Files\Android\Android Studio\jre\bin>keytool -exportcert -list -v -alias androiddebugkey -keystore C:\Users\CodianSoft\.android\debug.keystore
+Enter keystore password:
+
+*****************  WARNING WARNING WARNING  *****************
+* The integrity of the information stored in your keystore  *
+* has NOT been verified!  In order to verify its integrity, *
+* you must provide your keystore password.                  *
+*****************  WARNING WARNING WARNING  *****************
+
+Alias name: androiddebugkey
+Creation date: 28-Sep-2017
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: C=US, O=Android, CN=Android Debug
+Issuer: C=US, O=Android, CN=Android Debug
+Serial number: 1
+Valid from: Thu Sep 28 13:19:40 PKT 2017 until: Sat Sep 21 13:19:40 PKT 2047
+Certificate fingerprints:
+         MD5:  7F:D5:E3:B8:9C:FC:9F:89:4E:33:86:37:E9:8A:14:39
+         SHA1: 8A:DB:26:5A:45:72:EA:78:C6:73:27:72:FF:25:4E:28:2F:1B:E7:DD
+         SHA256: B0:74:B1:B8:60:28:78:D0:5B:01:F7:06:1C:87:40:1E:36:36:5E:95:E2:B4:64:DD:69:BA:59:34:CE:70:4D:5B
+         Signature algorithm name: SHA1withRSA
+         Version: 1

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/frame">
+
+        <ImageView
+            android:id="@+id/imageTutor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lead1"
+            />
+        <ImageView
+            android:id="@+id/online_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/green_circle_image"
+            android:layout_gravity="right|top"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bella Adwerd"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/frame"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Demo : "
+        android:textSize="15dp"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/frame"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/demo_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:textSize="15dp"
+
+        android:layout_toRightOf="@id/demo"
+        android:layout_below="@id/name"/>
+    <TextView
+        android:id="@+id/experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/frame"
+        android:layout_below="@id/demo"
+        android:textSize="15dp"
+
+        android:text="Experience : "
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/experience_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6 years"
+        android:textSize="15dp"
+        android:layout_below="@+id/demo"
+        android:layout_toRightOf="@id/experience"/>
+    <TextView
+        android:id="@+id/qualification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/frame"
+        android:textSize="15dp"
+
+        android:layout_below="@id/experience"
+        android:text="Qualification : "
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/qualification_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="M Tech"
+        android:layout_below="@+id/experience"
+        android:layout_toRightOf="@id/qualification"/>
+
+</RelativeLayout>

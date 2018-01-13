@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codiansoft.teachlerystudent.Activities.AboutUsActivity">
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="30dp">
+
+
+      <TextView
+          android:id="@+id/textview1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="24/7 Access"
+          android:textSize="22sp"
+          android:textColor="@color/textColorGray"/>
+      <TextView
+          android:id="@+id/textview2"
+          android:layout_below="@id/textview1"
+          android:layout_marginTop="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16sp"
+          android:text="School is Tough . Getting a tutor is easy . Get a real tutor anytime , anywhere in our online classroom ."
+          android:textColor="@color/textColorGray"/>
+
+      <TextView
+          android:id="@+id/textview3"
+          android:layout_below="@id/textview2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Variety of subjects"
+          android:textSize="20sp"
+          android:textColor="@color/textColorGray"/>
+      <TextView
+          android:id="@+id/textview4"
+          android:layout_below="@id/textview3"
+          android:layout_marginTop="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16sp"
+          android:text="from Algebra , Calculis and Statistics to English , Chemistry and Physics . Test prep and AP too ."
+          android:textColor="@color/textColorGray"/>
+
+  </RelativeLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/girl"/>
+
+</RelativeLayout>

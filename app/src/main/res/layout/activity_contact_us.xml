@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="com.codiansoft.teachlerystudent.Activities.ContactUsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@mipmap/person_gray" />
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textColor="@color/textColorGray"
+            android:hint="Full Name"
+            android:backgroundTint="@color/textColorGray"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:src="@drawable/email" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textColor="@color/textColorGray"
+            android:hint="Email"
+            android:backgroundTint="@color/textColorGray"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@mipmap/edit" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:textColor="@color/textColorGray"
+            android:hint="Subject"
+            android:backgroundTint="@color/textColorGray"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/rounded_9">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/appCompatEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#FFF8F8F9"
+            android:gravity="top|left"
+            android:hint="Your Message here ..."
+            android:textColor="@color/textColorGray" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="SUBMIT"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_10"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

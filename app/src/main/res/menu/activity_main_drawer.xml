@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_bookings"
+            android:title="Bookings" />
+        <item
+            android:id="@+id/nav_tutors"
+            android:title="Tutors"/>
+
+        <item
+            android:id="@+id/nav_manage"
+            android:title="Manage" />
+
+        <item
+            android:id="@+id/nav_account"
+            android:title="Account" />
+        <item
+            android:id="@+id/nav_leads"
+            android:title="Leads" />
+
+        <item
+            android:id="@+id/nav_courses"
+            android:title="Courses"/>
+
+        <item
+            android:id="@+id/nav_course_categories"
+            android:title="Courses Categories"/>
+
+        <item
+            android:id="@+id/nav_credit_conversion_request"
+            android:title="Credit Conversion Request"/>
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings"/>
+
+
+
+
+    </group>
+
+
+
+</menu>
