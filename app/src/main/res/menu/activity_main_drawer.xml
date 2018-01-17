@@ -15,8 +15,8 @@
             android:title="Tutors"/>
 
         <item
-            android:id="@+id/nav_manage"
-            android:title="Manage" />
+            android:id="@+id/nav_location"
+            android:title="Location" />
 
         <item
             android:id="@+id/nav_account"

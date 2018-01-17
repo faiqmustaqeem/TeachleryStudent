@@ -1,5 +1,6 @@
 package com.codiansoft.teachlerystudent.Activities;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -17,15 +18,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.codiansoft.teachlerystudent.Fragments.BookingsFragment;
 import com.codiansoft.teachlerystudent.Fragments.ConversionRequestFragment;
 import com.codiansoft.teachlerystudent.Fragments.CourseFragment;
 import com.codiansoft.teachlerystudent.Fragments.DashboardFragment;
 import com.codiansoft.teachlerystudent.Fragments.LeadsFragment;
+import com.codiansoft.teachlerystudent.Fragments.LocationFragment;
 import com.codiansoft.teachlerystudent.Fragments.SettingsFragment;
 import com.codiansoft.teachlerystudent.Fragments.TutorsFragment;
+import com.codiansoft.teachlerystudent.Models.LocationModel;
 import com.codiansoft.teachlerystudent.R;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlacePicker;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -46,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG_DASHBOARD = "dashboard";
     private static final String TAG_BOOKINGS = "bookings";
     private static final String TAG_TUTORS = "tutors";
-    private static final String TAG_MANAGE = "manage";
+    private static final String TAG_LOCATION = "location";
     private static final String TAG_ACCOUNT = "account";
     private static final String TAG_LEADS = "leads"; // student
     private static final String TAG_COURSES = "courses";
@@ -66,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean shouldLoadDashboardFragOnBackPress = true;
     private Handler mHandler;
     Activity activity;
+    final int PLACE_PICKER_REQUEST=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -198,6 +206,9 @@ public class MainActivity extends AppCompatActivity {
             case 2:
                 TutorsFragment tutorsFragment=new TutorsFragment();
                 return tutorsFragment;
+            case 3:
+                LocationFragment locationFragment=new LocationFragment();
+                return locationFragment;
             case 5:
                 LeadsFragment leadsFragment=new LeadsFragment();
                 return leadsFragment;
@@ -251,6 +262,11 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_tutors:
                         navItemIndex=2;
                         CURRENT_TAG=TAG_TUTORS;
+                        break;
+
+                    case R.id.nav_location:
+                        navItemIndex=3;
+                        CURRENT_TAG=TAG_LOCATION;
                         break;
 
                     case R.id.nav_leads:
@@ -377,6 +393,19 @@ public class MainActivity extends AppCompatActivity {
 //            fab.show();
 //        else
 //            fab.hide();
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == PLACE_PICKER_REQUEST) {
+            if (resultCode == RESULT_OK) {
+                Place place = PlacePicker.getPlace(data, this);
+                String toastMsg = String.format("Place: %s", place.getName());
+                LocationFragment fragment = (LocationFragment) getSupportFragmentManager().
+                        findFragmentByTag(TAG_LOCATION);
+                fragment.textLocation.setVisibility(View.VISIBLE);
+                fragment.textLocation.setText(toastMsg);
+            }
+        }
     }
 
 }

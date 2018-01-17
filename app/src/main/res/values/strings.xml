@@ -9,4 +9,9 @@
     <!--facebook login-->
     <string name="facebook_app_id">367972040335472</string>
     <string name="fb_login_protocol_scheme">fb367972040335472</string>
+
+    <string name="google_maps_key">AIzaSyBZ7bIPoCuNlL9-lAxv7aEc9Kkty3dDbNA</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

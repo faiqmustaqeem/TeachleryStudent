@@ -85,6 +85,10 @@ public class SettingsFragment extends Fragment {
                                Intent i2=new Intent(getActivity() , AboutUsActivity.class);
                                startActivity(i2);
                                break;
+                           case 2:
+
+                               break;
+
                            case 4:
                                new MaterialDialog.Builder(getActivity())
                                        .title("Logout")
